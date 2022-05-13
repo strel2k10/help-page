@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from "react";
+
+import Routes from "./routes/index";
+
+// Components
+
+/* import Boxes from "./Components/Boxes/Boxes";
+import FAQBuyers from "./Components/FAQ/FAQBuyers/FAQBuyers";
+import FAQSellers from "./Components/FAQ/FAQSellers/FAQSellers";
+import Contact from "./Components/Contact/Contact";
+import suggestedThemeClasses from "./Styles/suggestedThemes.module.css";
+import suggestedThemesDivClasses from "./Styles/suggestedThemesDiv.module.css";
+import FAQSectionThemeDivClasses from "./Styles/faqSectionThemeDiv.module.css"; */
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+
+      <Routes />
+
+    </Fragment>
   );
 }
 
