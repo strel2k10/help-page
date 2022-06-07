@@ -7,16 +7,15 @@ import classes from "./questionBox.module.scss";
 const QuestionBox = (props) => {
   return (
     <Fragment>
-      <Accordion className={classes["accordion"]} defaultActiveKey="0">
-        <Accordion.Item eventKey={props.eventKey}>
+        <Accordion.Item className={classes["accordionItem"]} eventKey={props.eventKey}>
           <Accordion.Header className={classes["accordionHeader"]}>
             {props.questionTitle}
           </Accordion.Header>
           <Accordion.Body className={classes["accordionBody"]}>
-            {props.questionBody}
+            {props.children}
           </Accordion.Body>
+          
         </Accordion.Item>
-      </Accordion>
     </Fragment>
   );
 };

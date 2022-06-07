@@ -1,0 +1,34 @@
+@import "../../Styles/_settings.scss";
+
+.wrapper {
+  max-width: $website-width;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.contactText {
+  font-size: 14px;
+  line-height: 1.42857;
+  margin: 0 0 10;
+}
+
+.contactTitle {
+  color: #565a5c;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.1;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contactList {
+  margin-top: 0;
+  margin-bottom: 10px;
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}

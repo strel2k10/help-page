@@ -10,6 +10,7 @@
   width: 100%;
   margin: auto;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .faqPostAdsTitle {
@@ -23,6 +24,7 @@
   width: 100%;
   margin: auto;
   margin-top: 15px;
+  margin-bottom: 10px;
 }
 
 .faqManageMyAdsTitle {
@@ -30,4 +32,10 @@
   font-size: 18px;
   text-align: left;
   color: #2e95ec;
+}
+
+.accordionBody {
+  font-size: 14px;
+  line-height: 1.42857;
+  font-family: helvetica neue, Helvetica, Arial, sans-serif;
 }

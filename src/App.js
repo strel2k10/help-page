@@ -2,6 +2,8 @@ import { Fragment } from "react";
 
 import Routes from "./routes/index";
 
+import "./Styles/style.scss"
+
 // Components
 
 /* import Boxes from "./Components/Boxes/Boxes";
