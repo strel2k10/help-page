@@ -1,0 +1,9 @@
+.guideBoxesGrid {
+    display: grid;
+    margin: auto;
+    width: 1040px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    margin-top: 15px;
+  }
+  

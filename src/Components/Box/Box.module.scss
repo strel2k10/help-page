@@ -1,0 +1,33 @@
+@import "../../Styles/_settings.scss";
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 14px;
+  height: 169px;
+  width: auto;
+  flex-direction: column;
+  border: solid 1px #ececec;
+  background-color: white;
+}
+
+.boxTitle {
+  font-family: "Arial";
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.imageLogo {
+  width: 25%;
+  height: 25%;
+  object-fit: contain;
+}
+
+
+@media only screen and (max-width: $website-SM-width) {
+  .box {
+    height: 200px;
+  }
+}

@@ -9,7 +9,7 @@ import contactIcon from "../../assets/contactIcon.svg";
 import privacyIcon from "../../assets/privacyIcon.svg";
 import testemoniesIcon from "../../assets/testemoniesIcon.svg";
 
-import classes from "./Boxes.module.css";
+import classes from "./Boxes.module.scss";
 
 import Box from "../Box/Box";
 

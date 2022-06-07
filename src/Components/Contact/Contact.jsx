@@ -1,15 +1,18 @@
-import React from 'react';  
-import classes from "./Contact.module.css";
+import React from "react";
+import classes from "./Contact.module.scss";
 
+const Contact = (props) => {
+  return (
+    <div className={classes["divContact"]}>
+      <a className={classes["clickableText"]} href="reddit.com">
+        <span>Tem dúvidas?</span> <span>Entre em contacto</span>
+      </a>
 
-const Contact = props => {
-    return (
-      <div className={classes["divContact"]}>
-        <a className={classes["clickableText"]} href="reddit.com">Tem dúvidas? <br/>Entre em contacto </a>
+      <span className={classes["contactTextContent"]}>
+        A nossa equipa de suporte estará disponível para o ajudar.
+      </span>
+    </div>
+  );
+};
 
-        <p className={classes["contactTextContent"]}>A nossa equipa de suporte <br/>estará disponível para o ajudar.</p>
-      </div>
-    );
-  };
-  
-  export default Contact;
+export default Contact;

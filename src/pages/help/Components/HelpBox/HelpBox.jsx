@@ -1,5 +1,5 @@
 import React from "react";
-import classes from "./Box.module.scss";
+import classes from "./helpBox.module.scss";
 
 const test = () => {
   console.log("Click :)");

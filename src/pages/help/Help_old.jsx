@@ -5,10 +5,10 @@ import classes from "./help.module.scss";
 
 // Components
 
-import Boxes from "./Components/HelpBoxes/HelpBoxes";
-import FAQBuyers from "./Components/FAQ//FAQBuyers/FAQBuyers";
-import FAQSellers from "./Components/FAQ/FAQSellers/FAQSellers";
-import Contact from "./Components/Contact/Contact";
+import Boxes from "../../Components/Boxes/Boxes";
+import FAQBuyers from "../../Components/FAQ/FAQBuyers/FAQBuyers";
+import FAQSellers from "../../Components/FAQ/FAQSellers/FAQSellers";
+import Contact from "../../Components/Contact/Contact";
 import suggestedThemeClasses from "../../Styles/suggestedThemes.module.css";
 // import suggestedThemesDivClasses from "../../Styles/suggestedThemesDiv.module.css";
 import FAQSectionThemeDivClasses from "../../Styles/faqSectionThemeDiv.module.scss";
