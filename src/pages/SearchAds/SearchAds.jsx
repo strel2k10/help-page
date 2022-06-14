@@ -6,9 +6,11 @@ import classes from "./searchAds.module.scss";
 // Components
 
 // Images
-import fillFormStep1 from "../../assets/help-ai-step-1.jpg";
-import fillFormStep2 from "../../assets/help-ai-step-2.jpg";
-import fillFormStep3 from "../../assets/help-ai-step-3.jpg";
+import howToReply1 from "../../assets/howto_reply_site_1.png";
+import howToReply2 from "../../assets/howto_reply_search_2.jpg";
+import howToReply3 from "../../assets/howto_reply_results_3.png";
+import howToReply4 from "../../assets/howto_reply_fill_4.png";
+import howToReply5 from "../../assets/howto_reply_success_5.jpg";
 
 const SearchAds = (props) => {
   return (
@@ -28,13 +30,18 @@ const SearchAds = (props) => {
         o ajudar e responder às suas dúvidas.
         <br /> Obrigado.
       </p>
+
       <h4 className={classes["otherTitles"]}>
         Entre em <a href="https://www.custojusto.pt">CustoJusto.pt</a>
       </h4>
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img src={fillFormStep1} alt="fillFormStep1"></img>
+          <img
+            className={classes["fillformImage"]}
+            src={howToReply1}
+            alt="fillFormStep1"
+          ></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["searchAdsText"]}>
@@ -50,7 +57,11 @@ const SearchAds = (props) => {
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img src={fillFormStep2} alt="fillFormStep2"></img>
+          <img
+            className={classes["fillformImage"]}
+            src={howToReply2}
+            alt="fillFormStep2"
+          ></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["searchAdsText"]}>
@@ -77,7 +88,11 @@ const SearchAds = (props) => {
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img src={fillFormStep3} alt="fillFormStep3"></img>
+          <img
+            className={classes["fillformImage"]}
+            src={howToReply3}
+            alt="fillFormStep3"
+          ></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["searchAdsText"]}>
@@ -93,6 +108,48 @@ const SearchAds = (props) => {
       <h4 className={classes["otherTitles"]}>
         Selecione os anúncios que quer responder
       </h4>
+
+      <div className={classes["fillFormDiv"]}>
+        <div className={classes["fillformDivImage"]}>
+          <img
+            className={classes["fillformImage"]}
+            src={howToReply4}
+            alt="fillFormStep4"
+          ></img>
+        </div>
+        <div className={classes["fillFormDivText"]}>
+          <p className={classes["searchAdsText"]}>
+            Entre em contacto com o anunciante, inserindo o seu <b>nome</b>,{" "}
+            <b>email</b> e<b>contacto telefónico</b>, <b>se desejar</b>. Em
+            seguida detalhe na caixa de texto o seu <b>pedido de informação</b>.
+            Por fim, clique em <b>Enviar</b>.
+          </p>
+        </div>
+      </div>
+
+      <h4 className={classes["otherTitles"]}>Resposta enviada</h4>
+
+      <div className={classes["fillFormDiv"]}>
+        <div className={classes["fillformDivImage"]}>
+          <img
+            className={classes["fillformImage"]}
+            src={howToReply5}
+            alt="fillFormStep5"
+          ></img>
+        </div>
+        <div className={classes["fillFormDivText"]}>
+          <p className={classes["searchAdsText"]}>
+            O seu email foi enviado com sucesso! Agora, aguarde pela resposta do
+            anunciante e se assim for, marque um encontro, veja o produto e
+            acorde os detalhes da transação.
+          </p>
+          <p>
+            <b className={classes["searchAdsText"]}>
+              Até lá faça Bons Negócios!
+            </b>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };

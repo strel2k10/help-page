@@ -6,13 +6,16 @@
   margin: 0 auto;
 }
 
-.publishAdTitle {
+.searchAdsTitle {
   margin-top: 20px;
   margin-bottom: 10px;
   font-size: 30px;
 }
-
-.publishAdText {
+.otherTitles {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+.searchAdsText {
   font-size: 14px;
 }
 
@@ -30,7 +33,6 @@
   height: 130px;
 }
 
-
 //tablet
 @media only screen and (max-width: $website-SM-width) {
 }
@@ -45,11 +47,4 @@
     box-sizing: border-box;
   }
 
-  .fillformDivImage {
-    margin-right: 0px;
-  }
-
-  .fillformImage {
-    display: none;
-  }
 }

@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
+import React from "react";
 
 // Styles
-import "./guide.scss";
+import classes from "./guide.module.scss";
 
 // Components
 
@@ -9,12 +9,12 @@ import GuideBoxesGrid from "./Components/GuideBoxesGrid/GuideBoxesGrid";
 
 function Help() {
   return (
-    <Fragment>
-      <div className={["howToUseTitleDiv"]}>
-        <span className={["howToUseTitle"]}>Como utilizar</span>
+    <div className={classes["wrapper"]}>
+      <div className={classes["howToUseTitleDiv"]}>
+        <span className={classes["howToUseTitle"]}>Como utilizar</span>
       </div>
-      <div className={["howToUseDescriptionDiv"]}>
-        <span className={["howToUseDescription"]}>
+      <div className={classes["howToUseDescriptionDiv"]}>
+        <span className={classes["howToUseDescription"]}>
           O nosso propósito é que possa comprar e vender próximo de si de um
           modo simples. Aqui pode encontrar de tudo, desde a sua próxima
           viatura, casa, telemóvel, emprego, a um animal de estimação, entre
@@ -22,14 +22,14 @@ function Help() {
         </span>
       </div>
 
-      <div className={["publishAdDiv"]}>
-        <div className={["publishAdTitleDiv"]}>
-          <span className={["publishAdTitle"]}>
+      <div className={classes["publishAdDiv"]}>
+        <div className={classes["publishAdTitleDiv"]}>
+          <span className={classes["publishAdTitle"]}>
             Publicar um anúncio nunca foi tão fácil!
           </span>
         </div>
-        <div className={["publishAdDescriptionDiv"]}>
-          <span className={["publishAdDescription"]}>
+        <div className={classes["publishAdDescriptionDiv"]}>
+          <span className={classes["publishAdDescription"]}>
             Siga passo-a-passo as nossas indicações e coloque o seu anúncio
             online em apenas alguns minutos, sem qualquer dificuldade e de modo
             gratuito.
@@ -40,7 +40,7 @@ function Help() {
       <div>
         <GuideBoxesGrid />
       </div>
-    </Fragment>
+    </div>
   );
 }
 

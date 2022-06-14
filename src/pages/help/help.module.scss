@@ -38,11 +38,11 @@ body {
   width: 25%;
 }
 
-//tablet
-@media only screen and (max-width: $website-SM-width) {
+//mobile
+@media only screen and (max-width: $website-XS-width) {
 }
 
-//mobile
+//tablet
 @media only screen and (max-width: $website-SM-width) {
   .wrapper {
     max-width: $website-SM-width;

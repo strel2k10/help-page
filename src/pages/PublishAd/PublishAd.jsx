@@ -32,7 +32,11 @@ const PublishAd = (props) => {
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img src={fillFormStep1} alt="fillFormStep1"></img>
+          <img
+            className={classes["fillformImage"]}
+            src={fillFormStep1}
+            alt="fillFormStep1"
+          ></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["publishAdText"]}>
@@ -61,7 +65,7 @@ const PublishAd = (props) => {
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img src={fillFormStep2} alt="fillFormStep2"></img>
+          <img className={classes["fillformImage"]} src={fillFormStep2} alt="fillFormStep2"></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["publishAdText"]}>
@@ -79,7 +83,7 @@ const PublishAd = (props) => {
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img src={fillFormStep3} alt="fillFormStep3"></img>
+          <img className={classes["fillformImage"]} src={fillFormStep3} alt="fillFormStep3"></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["publishAdText"]}>

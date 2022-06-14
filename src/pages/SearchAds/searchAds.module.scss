@@ -11,6 +11,48 @@
   margin-bottom: 10px;
   font-size: 30px;
 }
+.otherTitles {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
 .searchAdsText {
   font-size: 14px;
+}
+
+.fillFormDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.fillformDivImage {
+  margin-right: 15px;
+}
+
+.fillformImage {
+  width: 230px;
+  height: 130px;
+}
+
+//tablet
+@media only screen and (max-width: $website-SM-width) {
+}
+
+//mobile
+@media only screen and (max-width: $website-XS-width) {
+  .wrapper {
+    max-width: $website-XS-width;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .fillformDivImage {
+    margin-right: 0px;
+  }
+
+  .fillformImage {
+    display: none;
+  }
 }
