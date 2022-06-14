@@ -1,7 +1,7 @@
 import React from "react";
 
 // Styles
-import classes from "./publishAd.module.scss";
+import classes from "./searchAds.module.scss";
 
 // Components
 
@@ -10,95 +10,91 @@ import fillFormStep1 from "../../assets/help-ai-step-1.jpg";
 import fillFormStep2 from "../../assets/help-ai-step-2.jpg";
 import fillFormStep3 from "../../assets/help-ai-step-3.jpg";
 
-const PublishAd = (props) => {
+const SearchAds = (props) => {
   return (
     <div className={classes["wrapper"]}>
-      <div className={classes["publishAdTitle"]}>
-        <h2>Publicar um anúncio nunca foi tão fácil!</h2>
+      <div className={classes["searchAdsTitle"]}>
+        <h2>Veja como pesquisar e responder no CustoJusto.pt</h2>
       </div>
-      <p className={classes["publishAdText"]}>
-        Siga passo-a-passo as nossas indicações e o seu anúncio será publicado
-        sem dificuldade e de modo gratuito em alguns minutos.
+      <p className={classes["searchAdsText"]}>
+        Siga passo-a-passo as nossas indicações e a sua pesquisa será efectuada
+        sem qualquer problema.
       </p>
       <h3 className={classes["otherTitles"]}>Explicação passo-a-passo</h3>
-      <p className={classes["publishAdText"]}>
-        Se preferir, siga a explicação rápida de apenas 3 passos para inserir um
-        anúncio no CustoJusto.pt.
-        <br /> Qualquer dúvida que tenha não hesite em entrar em contacto com a
-        nossa equipa de suporte. Sempre disponível para o ajudar e responder às
-        suas dúvidas. Obrigado.
+      <p className={classes["searchAdsText"]}>
+        Explicação rápida dos passos necessários para pesquisar e responder a
+        anúncios no CustoJusto.pt. Qualquer dúvida que tenha não hesite em
+        entrar em contacto com a nossa equipa de suporte. Sempre disponível para
+        o ajudar e responder às suas dúvidas.
+        <br /> Obrigado.
       </p>
-      <h3 className={classes["otherTitles"]}>Preencher o formulário</h3>
+      <h4 className={classes["otherTitles"]}>
+        Entre em <a href="https://www.custojusto.pt">CustoJusto.pt</a>
+      </h4>
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
           <img src={fillFormStep1} alt="fillFormStep1"></img>
         </div>
         <div className={classes["fillFormDivText"]}>
-          <p className={classes["publishAdText"]}>
-            Depois de clicar no botão de{" "}
-            <a href="https://www.custojusto.pt/ai/form/0">inserir anúncio</a>,
-            escolha a categoria correcta e se pretende <b>vender</b>,
-            <b>comprar</b>, <b>alugar</b> ou <b>procurar</b>.
-          </p>
-          <p className={classes["publishAdText"]}>
-            Insira o <b>título</b>, o <b>texto descritivo</b> e <b>fotos</b>;
-            lembre-se de que <b>quanto mais informação</b> tiver o seu anúncio,{" "}
-            <b>maior a visibilidade</b> do mesmo.
-          </p>
-          <p className={classes["publishAdText"]}>
-            Insira o <b>código postal</b> e confirme a sua <b>localidade</b>, e
-            a seguir insira os seus dados. Se é <b>profissional</b>, deverá
-            identificar-se como tal, indicando o <b>número fiscal</b> (não é
-            visível no site).
+          <p className={classes["searchAdsText"]}>
+            Selecione a sua zona, por exemplo,{" "}
+            <a href="https://www.custojusto.pt/lisboa">Lisboa</a>,
           </p>
         </div>
       </div>
 
-      <h3 className={classes["otherTitles"]}>
-        Confirmar ou destacar o anúncio
-      </h3>
+      <h4 className={classes["otherTitles"]}>
+        Preencha os critérios da pesquisa
+      </h4>
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
           <img src={fillFormStep2} alt="fillFormStep2"></img>
         </div>
         <div className={classes["fillFormDivText"]}>
-          <p className={classes["publishAdText"]}>
-            Confirme o seu anúncio clicando no botão laranja ao fundo da página.
+          <p className={classes["searchAdsText"]}>
+            Para que encontre mais facilmente o que procura,{" "}
+            <b>afine a sua pesquisa</b>, selecionando a <b>categoria</b> e{" "}
+            <b>sub categoria</b>. Por exemplo, neste caso vamos{" "}
+            <b>procurar uma moradia</b>.
           </p>
-          <p className={classes["publishAdText"]}>
-            Pode ainda destacar o seu anúncio, de forma a gerar mais
-            visualizações e contactos. Basta para isso escolher um dos nossos
-            serviços.
+          <p className={classes["searchAdsText"]}>
+            O tipo de negócio que pretende, se é uma venda, aluguer, neste caso
+            consideramos <b>venda</b>.
+          </p>
+          <p className={classes["searchAdsText"]}>
+            Agora detalhe as suas preferências: <b>Preço</b>, <b>área util</b>,{" "}
+            <b>tipologia</b> e <b>concelho</b>.
+          </p>
+          <p className={classes["searchAdsText"]}>
+            Por fim <b>clique no botão azul de pesquisa</b>.
           </p>
         </div>
       </div>
 
-      <h3 className={classes["otherTitles"]}>Anúncio inserido</h3>
+      <h4 className={classes["otherTitles"]}>Veja os resultados</h4>
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
           <img src={fillFormStep3} alt="fillFormStep3"></img>
         </div>
         <div className={classes["fillFormDivText"]}>
-          <p className={classes["publishAdText"]}>
-            O processo de colocação online do seu anúncio poderá levar o{" "}
-            <b>tempo máximo de 3 horas</b>, todos os anúncios são revistos pela
-            nossa equipa, estando activo por um <b>período de 60 dias</b>.
-          </p>
-          <p className={classes["publishAdText"]}>
-            Findo este período ser-lhe-á <b>enviado um email</b> para eliminar
-            ou revalidar o seu anúncio.
-          </p>
-
-          <p className={classes["publishAdText"]}>
-            <b>Até lá faça Bons Negócios!</b>
+          <p className={classes["searchAdsText"]}>
+            Em seguida, aparecerão muitos anúncios que correspondem à sua
+            procura, que poderá sempre organizar <b>por preço</b> ou{" "}
+            <b>guardá-los</b>. <b>Clique em guardar</b> para revê-los mais
+            tarde. Estes anúncios ficam guardados na secção "
+            <b>Meus Anúncios</b>".
           </p>
         </div>
       </div>
+
+      <h4 className={classes["otherTitles"]}>
+        Selecione os anúncios que quer responder
+      </h4>
     </div>
   );
 };
 
-export default PublishAd;
+export default SearchAds;

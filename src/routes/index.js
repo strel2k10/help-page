@@ -9,6 +9,8 @@ import FAQ from "../pages/FAQ/FAQ";
 import AboutUs from "../pages/AboutUs/AboutUs";
 import Contact from "../pages/Contact/Contact";
 import PublishAd from "../pages/PublishAd/PublishAd";
+import SearchAds from "../pages/SearchAds/SearchAds";
+
 
 function Routes() {
   return (
@@ -23,6 +25,7 @@ function Routes() {
             <Route exact path="/aboutus" render={() => <AboutUs />} />
             <Route exact path="/contact" render={() => <Contact />} />
             <Route exact path="/publishad" render={() => <PublishAd />} />
+            <Route exact path="/searchads" render={() => <SearchAds />} />
           </Switch>
         </Suspense>
       </BrowserRouter>
