@@ -4,15 +4,11 @@ p {
   margin: 0 0 10px;
 }
 .wrapper {
+  width: 1170px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
-}
-
-.row {
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .sideMenuAndPageContentFlex {
@@ -21,23 +17,30 @@ p {
 }
 .sideMenuDiv {
   width: 25%;
+  padding: 0 15px;
 }
 
 .pageContentDiv {
   width: 75%;
+  margin-top: 30px;
+  padding: 0 15px;
 }
+
 .infoPlusImageDiv {
   display: flex;
   flex-direction: row;
+  margin: 40px 0px;
 }
 .infoDiv {
   width: 33.33333%;
 }
+
 .statsList {
   margin: 15px 0;
   padding-left: 0;
   list-style: none;
 }
+
 .statsNumbers {
   margin-top: 0 !important;
   margin-bottom: 10px;
@@ -61,6 +64,10 @@ p {
   vertical-align: middle;
 }
 
+.aboutUsTextDiv {
+  margin-bottom: 30px;
+}
+
 .hrcss {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -74,6 +81,10 @@ p {
 
 .moreInfoDiv {
   width: 100%;
+}
+
+.moreInfoDiv h4 {
+  margin-bottom: 20px;
 }
 .moreInfo {
   font-size: 18px;
@@ -96,19 +107,20 @@ p {
   margin-bottom: 3px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    width: 970px;
+  }
   .statsNumbers {
-    font-size: 35px !important;
+    font-size: 35px;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  .statsNumbers {
-    font-size: 35px !important;
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    width: 750px;
   }
-}
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {
   .infoDiv {
     width: 100%;
   }
@@ -120,13 +132,11 @@ p {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .wrapper {
-    width: 750px;
-  }
-}
-
 @media only screen and (max-width: 768px) {
+  .wrapper {
+    width: auto;
+  }
+
   .sideMenuAndPageContentFlex {
     flex-direction: column;
   }
@@ -143,22 +153,5 @@ p {
 
   .pageContentDiv {
     width: 100%;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .wrapper {
-    width: 970px;
-  }
-
-  .row {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .wrapper {
-    width: 1170px;
   }
 }
