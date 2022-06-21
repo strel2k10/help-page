@@ -24,16 +24,40 @@ function Contact() {
           nas opções em baixo. Procuramos responder às questões que nos são
           colocadas no mais curto espaço de tempo possível.
         </p>
-
         <h2 className={classes["contactTitle"]}>
           {" "}
           Seleccione o assunto do seu contacto
         </h2>
-
         <ul className={classes["contactList"]}>
           <li>
-            {" "}
             <a href="www.google.pt">Problemas com anúncios</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Problemas com os serviços</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Contactos a anúncios</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Problemas técnicos</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Sugestões</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Outros</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Imprensa e Publicidade</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Versão mobile</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Dificuldade de acesso aos telefones</a>
+          </li>
+          <li>
+            <a href="www.google.pt">Problemas com a conta de utilizador</a>
           </li>
         </ul>
       </div>

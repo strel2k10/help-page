@@ -2,7 +2,7 @@ import { Fragment } from "react";
 
 import Routes from "./routes/index";
 
-import "./Styles/style.scss"
+import "./Styles/style.scss";
 
 // Components
 
@@ -15,13 +15,7 @@ import suggestedThemesDivClasses from "./Styles/suggestedThemesDiv.module.css";
 import FAQSectionThemeDivClasses from "./Styles/faqSectionThemeDiv.module.css"; */
 
 function App() {
-  return (
-    <Fragment>
-
-      <Routes />
-
-    </Fragment>
-  );
+  return <Routes />;
 }
 
 export default App;

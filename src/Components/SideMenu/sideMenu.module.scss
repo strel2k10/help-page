@@ -1,0 +1,74 @@
+@import "../../Styles/settings";
+
+.active {
+  color: red !important;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+.wrapper {
+  width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sideMenuAndPageContentFlex {
+  display: flex;
+  flex-direction: row;
+}
+.sideMenuDiv {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.sideMenuTitleDiv {
+  height: 40px;
+  background-color: #428bca;
+  border-radius: 4px;
+  margin-top: 4px;
+}
+
+.sideMenuTitle {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  margin: 0 0 10px;
+  color: #fff;
+}
+.sideMenuItemsList {
+  list-style-type: circle;
+}
+.sideMenuItem {
+  color: #2e95ec;
+  text-decoration: none !important;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    width: 970px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .wrapper {
+    width: 750px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .wrapper {
+    width: auto;
+  }
+
+  .sideMenuDiv {
+    width: 100%;
+  }
+
+  .pageContentDiv {
+    width: 100%;
+  }
+}
