@@ -9,10 +9,11 @@ import classes from "./publishAd.module.scss";
 import fillFormStep1 from "../../assets/help-ai-step-1.jpg";
 import fillFormStep2 from "../../assets/help-ai-step-2.jpg";
 import fillFormStep3 from "../../assets/help-ai-step-3.jpg";
+import HelpPage from "../../Components/HelpPage/HelpPage";
 
 const PublishAd = (props) => {
   return (
-    <div className={classes["wrapper"]}>
+    <HelpPage>
       <div className={classes["publishAdTitle"]}>
         <h2>Publicar um anúncio nunca foi tão fácil!</h2>
       </div>
@@ -65,7 +66,11 @@ const PublishAd = (props) => {
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img className={classes["fillformImage"]} src={fillFormStep2} alt="fillFormStep2"></img>
+          <img
+            className={classes["fillformImage"]}
+            src={fillFormStep2}
+            alt="fillFormStep2"
+          ></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["publishAdText"]}>
@@ -83,7 +88,11 @@ const PublishAd = (props) => {
 
       <div className={classes["fillFormDiv"]}>
         <div className={classes["fillformDivImage"]}>
-          <img className={classes["fillformImage"]} src={fillFormStep3} alt="fillFormStep3"></img>
+          <img
+            className={classes["fillformImage"]}
+            src={fillFormStep3}
+            alt="fillFormStep3"
+          ></img>
         </div>
         <div className={classes["fillFormDivText"]}>
           <p className={classes["publishAdText"]}>
@@ -101,7 +110,7 @@ const PublishAd = (props) => {
           </p>
         </div>
       </div>
-    </div>
+    </HelpPage>
   );
 };
 

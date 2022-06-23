@@ -1,25 +1,9 @@
 @import "../../Styles/_settings.scss";
 
-body {
-  background-color: #f9f9f9;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-
-#root {
-  background-color: #f9f9f9;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  max-width: $website-width;
-  width: 90%;
-  margin: 0 auto;
+.faqContactWrapper {
+  width: 100%;
+  display: flex;
+  margin: 30px 0;
 }
 
 .suggestedThemesDiv {
@@ -28,14 +12,16 @@ body {
   margin-top: 30px;
 }
 
-.faqContactWrapper {
-  width: 100%;
+.contactWrapper {
   display: flex;
-  margin: 30px 0;
+  height: fit-content;
+  flex-shrink: 0;
+  width: 245px;
 }
 
-.contactWrapper {
-  width: 25%;
+.faqSectionThemeDiv {
+  width: 100%;
+  margin-right: 20px;
 }
 
 //mobile
@@ -44,14 +30,7 @@ body {
 
 //tablet
 @media only screen and (max-width: $website-SM-width) {
-  .wrapper {
-    max-width: $website-SM-width;
-    width: 100%;
-    padding: 0 15px;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
+  
   .faqContactWrapper {
     flex-direction: column;
   }

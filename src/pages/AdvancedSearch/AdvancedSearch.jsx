@@ -1,4 +1,5 @@
 import React from "react";
+import HelpPage from "../../Components/HelpPage/HelpPage";
 
 // Styles
 import classes from "./advancedSearch.module.scss";
@@ -7,7 +8,7 @@ import classes from "./advancedSearch.module.scss";
 
 const AdvancedSearch = (props) => {
   return (
-    <div className={classes["wrapper"]}>
+    <HelpPage>
       <div className={classes["searchAdsTitle"]}>
         <h2>Pesquisa avançada</h2>
       </div>
@@ -137,7 +138,7 @@ const AdvancedSearch = (props) => {
           </ul>
         </div>
       </div>
-    </div>
+    </HelpPage>
   );
 };
 

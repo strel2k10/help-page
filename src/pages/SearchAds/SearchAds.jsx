@@ -11,10 +11,11 @@ import howToReply2 from "../../assets/howto_reply_search_2.jpg";
 import howToReply3 from "../../assets/howto_reply_results_3.png";
 import howToReply4 from "../../assets/howto_reply_fill_4.png";
 import howToReply5 from "../../assets/howto_reply_success_5.jpg";
+import HelpPage from "../../Components/HelpPage/HelpPage";
 
 const SearchAds = (props) => {
   return (
-    <div className={classes["wrapper"]}>
+    <HelpPage>
       <div className={classes["searchAdsTitle"]}>
         <h2>Veja como pesquisar e responder no CustoJusto.pt</h2>
       </div>
@@ -150,7 +151,7 @@ const SearchAds = (props) => {
           </p>
         </div>
       </div>
-    </div>
+    </HelpPage>
   );
 };
 

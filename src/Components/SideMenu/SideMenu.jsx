@@ -1,138 +1,66 @@
 import React from "react";
 import { useRouteMatch } from "react-router-dom";
-import { NavLink } from "react-router-dom";
-import { Link } from "react-router-dom";
 
 // Styles
 import classes from "./sideMenu.module.scss";
+import SideMenuComponent from "./SideMenuComponent/SideMenuComponent";
 
 function SideMenu() {
   let { path, url } = useRouteMatch();
 
   return (
     <div className={classes["wrapper"]}>
-      <div className={classes["sideMenuAndPageContentFlex"]}>
-        <div className={classes["sideMenuDiv"]}>
-          <NavLink
-            to="/sidemenutemp/ajuda"
-            style={{ textDecoration: "none" }}
-            activeStyle= {{ fontSize: "30px" }}
-          >
-            <div className={classes["sideMenuTitleDiv"]}>
-              <p className={classes["sideMenuTitle"]}>Ajuda</p>
-            </div>
-          </NavLink>
-          <div className={classes["sideMenuItemsDiv"]}>
-            <ul className={classes["sideMenuItemsList"]}>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Ajuda
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Como utilizar
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Perguntas Frequentes
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Quem somos
-                </a>
-              </li>
-            </ul>
-          </div>
+      <SideMenuComponent
+        destination_url="/help"
+        boxTitle="Ajuda"
+        options={[
+          { url: "/help", listItem: "Ajuda" },
+          { url: "/help/aboutus", listItem: "Quem somos" },
+        ]}
+      />
 
-          <Link to="/Blog" style={{ textDecoration: "none" }}>
-            <div className={classes["sideMenuTitleDiv"]}>
-              <p className={classes["sideMenuTitle"]}>Blog</p>
-            </div>
-          </Link>
+      <SideMenuComponent
+        external_url="https://blog.custojusto.pt/"
+        boxTitle="Blog"
+      />
 
-          <Link to="/ajuda-compra" style={{ textDecoration: "none" }}>
-            <div className={classes["sideMenuTitleDiv"]}>
-              <p className={classes["sideMenuTitle"]}>Compra Segura</p>
-            </div>
-          </Link>
+      <SideMenuComponent
+        destination_url={"/howtosection"}
+        boxTitle="Compra Segura"
+        options={[{ url: "/howtosection", listItem: "Envio de produtos" }]}
+      />
 
-          <div className={classes["sideMenuItemsDiv"]}>
-            <ul>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Envio de produtos
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Artigos roubados
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Veículos
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Artigos de marca
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Envio para o exterior
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Transferências online
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Para se proteger
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  SMSs recebidos
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Pagamentos por Multibanco
-                </a>
-              </li>
-              <li>
-                <a className={classes["sideMenuItem"]} href="/help">
-                  Pagamentos por MBWay
-                </a>
-              </li>
-            </ul>
-          </div>
+      <SideMenuComponent
+        destination_url="/contact"
+        boxTitle="Contacto"
+        options={[
+          { url: "/contact", listItem: "Problemas com anúncios" },
+          { url: "/help", listItem: "Ajuda" },
+        ]}
+      />
 
-          <Link to="/Blog" style={{ textDecoration: "none" }}>
-            <div className={classes["sideMenuTitleDiv"]}>
-              <p className={classes["sideMenuTitle"]}>Contacto</p>
-            </div>
-          </Link>
+      <SideMenuComponent
+        destination_url="/rules"
+        boxTitle="Regras e Privacidade"
+        options={[{ url: "/rules", listItem: ["Regras", "Privacidade"] }]}
+      />
 
-          <Link to="/Blog" style={{ textDecoration: "none" }}>
-            <div className={classes["sideMenuTitleDiv"]}>
-              <p className={classes["sideMenuTitle"]}>Regras e privacidade</p>
-            </div>
-          </Link>
+      <SideMenuComponent
+        destination_url="/testimonies"
+        boxTitle="Testemunhos"
+        options={[{ url: "/testimonies", listItem: "isto devia estar vazio" }]}
+      />
 
-          <Link to="/Blog" style={{ textDecoration: "none" }}>
-            <div className={classes["sideMenuTitleDiv"]}>
-              <p className={classes["sideMenuTitle"]}>Testemunhos</p>
-            </div>
-          </Link>
-        </div>
-      </div>
+      {/* <Switch>
+      <Route exact path={`${url}`} render={() => <HelpV2 />} />
+      <Route exact path={`${url}/faq`} render={() => <FAQ />} />
+      <Route exact path={`${url}/aboutus`} render={() => <AboutUs />} />
+      <Route
+        exact
+        path={`${url}/howtosection`}
+        render={() => <HowToSection />}
+      />
+    </Switch> */}
     </div>
   );
 }

@@ -11,10 +11,11 @@ import { Accordion } from "react-bootstrap";
 // Images
 import faqAdIdImage from "../../assets/faq_ad_id.png";
 import faqStarImage from "../../assets/icon_star.png";
+import HelpPage from "../../Components/HelpPage/HelpPage";
 
 const FAQ = (props) => {
   return (
-    <div className={classes["wrapper"]}>
+    <HelpPage>
       <div className={classes["faqPostAdsTitleDiv"]}>
         <span className={classes["faqPostAdsTitle"]}>Colocar anúncios</span>
       </div>
@@ -1072,7 +1073,7 @@ const FAQ = (props) => {
           </div>
         </Accordion>
       </div>
-    </div>
+    </HelpPage>
   );
 };
 

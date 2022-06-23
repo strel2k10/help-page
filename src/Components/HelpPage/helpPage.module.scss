@@ -1,0 +1,25 @@
+@import "../../Styles/_settings.scss";
+
+.wrapper {
+  display: flex;
+  max-width: $website-width;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pageContent {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+//tablet
+@media only screen and (max-width: $website-SM-width) {
+  .wrapper {
+    max-width: $website-SM-width;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+}

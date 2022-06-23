@@ -1,19 +1,11 @@
 @import "../../../Styles/_settings.scss";
 
-.active {
-  color: red !important;
+.active > .sideMenuTitleDiv {
+  background-color: #428bca;
 }
 
-.nav-link {
-  margin-left: 10px;
-}
-
-.wrapper {
-  width: 1170px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+.navLink {
+  color: #2e95ec;
 }
 
 .sideMenuAndPageContentFlex {
@@ -21,13 +13,12 @@
   flex-direction: row;
 }
 .sideMenuDiv {
-  width: 25%;
   padding: 0 15px;
 }
 
 .sideMenuTitleDiv {
   height: 40px;
-  background-color: #428bca;
+  background-color: transparent;
   border-radius: 4px;
   margin-top: 4px;
 }
@@ -37,38 +28,17 @@
   display: block;
   padding: 10px 15px;
   margin: 0 0 10px;
+  color: #2e95ec;
+}
+
+.active > .sideMenuTitleDiv > .sideMenuTitle {
   color: #fff;
 }
+
 .sideMenuItemsList {
   list-style-type: circle;
 }
 .sideMenuItem {
   color: #2e95ec;
   text-decoration: none !important;
-}
-
-@media only screen and (max-width: 1200px) {
-  .wrapper {
-    width: 970px;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .wrapper {
-    width: 750px;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .wrapper {
-    width: auto;
-  }
-
-  .sideMenuDiv {
-    width: 100%;
-  }
-
-  .pageContentDiv {
-    width: 100%;
-  }
 }

@@ -1,5 +1,12 @@
 @import "../../Styles/settings";
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+/*
 .active {
   color: red !important;
 }
@@ -72,3 +79,4 @@
     width: 100%;
   }
 }
+*/

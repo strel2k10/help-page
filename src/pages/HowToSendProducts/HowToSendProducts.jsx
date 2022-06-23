@@ -10,7 +10,7 @@ function HowToSendProducts() {
     <Fragment>
       <div className={classes["wrapper"]}>
         <h2 className={classes["caresTitle"]}>Envio de produtos</h2>
-        <p className={classes["caresItemTextDanger"]}>
+        <p className={classes["caresItemText"]}>
           A maioria das situações de fraude sucede quando o comprador e vendedor
           não se encontram.
         </p>
@@ -20,10 +20,8 @@ function HowToSendProducts() {
         <ul className={classes["caresList"]}>
           <li className={classes["caresItem"]}>
             <p className={classes["caresItemText"]}>
-              <b>
-                Nunca adiante dinheiro, independentemente da confiança que o
-                vendedor lhe aparenta.
-              </b>
+              Nunca adiante dinheiro, independentemente da confiança que o
+              vendedor lhe aparenta.
             </p>
           </li>
 
