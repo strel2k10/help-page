@@ -6,10 +6,11 @@ import classes from "./guide.module.scss";
 // Components
 
 import GuideBoxesGrid from "./Components/GuideBoxesGrid/GuideBoxesGrid";
+import HelpPage from "../../Components/HelpPage/HelpPage";
 
 function Help() {
   return (
-    <div className={classes["wrapper"]}>
+    <HelpPage>
       <div className={classes["howToUseTitleDiv"]}>
         <span className={classes["howToUseTitle"]}>Como utilizar</span>
       </div>
@@ -40,7 +41,7 @@ function Help() {
       <div>
         <GuideBoxesGrid />
       </div>
-    </div>
+    </HelpPage>
   );
 }
 

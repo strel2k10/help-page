@@ -1,6 +1,5 @@
 import React from "react";
 import HelpPage from "../../Components/HelpPage/HelpPage";
-import SideMenu from "../../Components/SideMenu/SideMenu";
 
 // Styles
 import classes from "./howToSection.module.scss";

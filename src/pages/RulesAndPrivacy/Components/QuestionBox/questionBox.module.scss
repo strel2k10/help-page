@@ -1,0 +1,22 @@
+@import "../../../../Styles/bootstrap/css/bootstrap.css";
+
+.accordionItem {
+  border: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+
+.accordionItem:not(:first-child) {
+  margin-top: 30px !important;
+}
+
+.accordionHeader button {
+  background-color: #f5f5f5 !important;
+  height: 25px;
+  font-size: 16px !important;
+  font-weight: 500 !important;
+}
+
+
+.accordionBody {
+  align-items: center;
+}
+

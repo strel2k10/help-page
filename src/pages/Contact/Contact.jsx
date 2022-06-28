@@ -1,4 +1,5 @@
-import React, { Fragment } from "react";
+import React from "react";
+import { Link } from "react-router-dom";
 import HelpPage from "../../Components/HelpPage/HelpPage";
 
 // Styles
@@ -12,11 +13,11 @@ function Contact() {
       <h2 className={classes["contactTitle"]}>Como podemos ajudar?</h2>
       <p className={classes["contactText"]}>
         Veja as respostas para as questões mais comuns sobre:{" "}
-        <a href="www.google.pt">Colocar anúncios</a>,{" "}
-        <a href="wwww.google.pt">Gerir anúncios</a>,{" "}
-        <a href="www.google.pt">Consultar anúncios</a>,{" "}
-        <a href="www.google.pt">Favoritos</a>,{" "}
-        <a href="www.google.pt">Revisão / anúncios rejeitados</a>.
+        <Link to="/help#a">Colocar anúncios</Link>,{" "}
+        <Link to="/help#b">Gerir anúncios</Link>,{" "}
+        <Link to="/help#c">Consultar anúncios</Link>,{" "}
+        <Link to="/help#d">Favoritos</Link>,{" "}
+        <Link to="/help#e">Revisão / anúncios rejeitados</Link>.
       </p>
       <p className={classes["contactText"]}>
         Se, mesmo assim, não encontrar resposta à sua pergunta, então poderá

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 
 // Styles
 import classes from "./FAQ.module.scss";
@@ -12,11 +12,8 @@ import { Accordion } from "react-bootstrap";
 import faqAdIdImage from "../../assets/faq_ad_id.png";
 import faqStarImage from "../../assets/icon_star.png";
 import HelpPage from "../../Components/HelpPage/HelpPage";
-import { useParams } from "react-router-dom";
 
 const FAQ = (props) => {
-  let { activeKey } = useParams();
-
   return (
     <HelpPage>
       <div className={classes["faqPostAdsTitleDiv"]}>
@@ -24,10 +21,7 @@ const FAQ = (props) => {
       </div>
 
       <div className={classes["faqAccordionDiv"]}>
-        <Accordion
-          className={classes["accordion"]}
-          defaultActiveKey={activeKey}
-        >
+        <Accordion className={classes["accordion"]} defaultActiveKey="0">
           {/*First Accordion*/}
           <div className={classes["faqAccordionDivPostAds"]}>
             <QuestionBox eventKey="0" questionTitle="Como publicar um anúncio?">

@@ -1,21 +1,6 @@
 @import "../../Styles/_settings.scss";
 
-body {
-  background-color: #f9f9f9;
-  width: auto;
-  height: auto;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  max-width: $website-width;
-  width: 90%;
-  margin: 0 auto;
-}
-
 .howToUseTitleDiv {
-  margin: auto;
   margin-top: 30px;
 }
 
@@ -27,7 +12,6 @@ body {
 }
 
 .howToUseDescriptionDiv {
-  margin: auto;
   margin-top: 10px;
 }
 
@@ -38,7 +22,6 @@ body {
 }
 
 .publishAdDiv {
-  margin: auto;
 }
 
 .publishAdTitle {
@@ -67,4 +50,5 @@ body {
 
 //mobile
 @media only screen and (max-width: $website-XS-width) {
+  
 }

@@ -8,7 +8,6 @@ import classes from "./help.module.scss";
 //import FAQSectionThemeDivClasses from "../../Styles/faqSectionThemeDiv.module.scss";
 import { useRouteMatch } from "react-router-dom";
 
-import SideMenu from "../../Components/SideMenu/SideMenu";
 import FAQSellers from "./Components/FAQ/FAQSellers/FAQSellers";
 import Contact from "./Components/Contact/Contact";
 import FAQBuyers from "./Components/FAQ/FAQBuyers/FAQBuyers";

@@ -1,21 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./FAQBuyers.module.css";
 
 const FAQBuyers = (props) => {
   return (
     <div className={classes["divFAQBuyers"]}>
       <h1 className={classes["titleTextContent"]}> Perguntas de Compradores</h1>
-      <a className={classes["clickableText"]} href="google.pt">
+      <Link className={classes["clickableText"]} to="/FAQ">
         Como guardo uma pesquisa nos Favoritos?
-      </a>
+      </Link>
       <br />
-      <a className={classes["clickableText"]} href="youtube.com">
+      <Link className={classes["clickableText"]} to="/FAQ">
         Como responder a um anúncio?
-      </a>
+      </Link>
       <br />
-      <a className={classes["clickableText"]} href="sapo.pt">
+      <Link className={classes["clickableText"]} to="/FAQ">
         Onde encontro o identificador do anúncio?
-      </a>
+      </Link>
       <br />
     </div>
   );

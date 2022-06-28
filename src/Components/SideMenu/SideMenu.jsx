@@ -15,7 +15,7 @@ function SideMenu() {
         boxTitle="Ajuda"
         options={[
           { url: "/help", listItem: "Ajuda" },
-          { url: "/howtosection", listItem: "Como utilizar" },
+          { url: "/guide", listItem: "Como utilizar" },
           { url: "/FAQ", listItem: "Perguntas frequentes" },
           { url: "/aboutus", listItem: "Quem somos" },
         ]}
@@ -30,17 +30,16 @@ function SideMenu() {
         destination_url={"/howtosection"}
         boxTitle="Compra Segura"
         options={[
-          { url: "/howtosection", listItem: "Envio de produtos" },
-          { url: "/howtosection", listItem: "Envio de produtos" },
-          { url: "/FAQ", listItem: "Artigos Roubados" },
-          { url: "/aboutus", listItem: "Veículos" },
-          { url: "/howtosection", listItem: "Artigos de marca" },
-          { url: "/FAQ", listItem: "Envio para o exterior" },
-          { url: "/aboutus", listItem: "Transferências online" },
-          { url: "/howtosection", listItem: "Para se proteger" },
-          { url: "/FAQ", listItem: "SMSs recebidos" },
-          { url: "/aboutus", listItem: "Pagamentos por Multibanco" },
-          { url: "/aboutus", listItem: "Pagamentos por MBWay" },
+          { url: "/howtosendproducts", listItem: "Envio de produtos" },
+          { url: "/howtostolenarticles", listItem: "Artigos Roubados" },
+          { url: "/howtovehicles", listItem: "Veículos" },
+          { url: "/howtobrands", listItem: "Artigos de marca" },
+          { url: "/howtosendabroad", listItem: "Envio para o exterior" },
+          { url: "/howtotransfermoneyonline", listItem: "Transferências online" },
+          { url: "/howtoprotectyourself", listItem: "Para se proteger" },
+          { url: "/howtoSMSs", listItem: "SMSs recebidos" },
+          { url: "/howtoATMpayments", listItem: "Pagamentos por Multibanco" },
+          { url: "/howtoMBWaypayments", listItem: "Pagamentos por MBWay" },
         ]}
       />
 
@@ -48,7 +47,7 @@ function SideMenu() {
         destination_url="/contact"
         boxTitle="Contacto"
         options={[
-          { url: "/contact", listItem: "Problemas com anúncios" },
+          { url: "/contactformads", listItem: "Problemas com anúncios" },
           { url: "/help", listItem: "Problemas com os serviços" },
           { url: "/contact", listItem: "Contactos a anúncios" },
           { url: "/help", listItem: "Problemas técnicos" },

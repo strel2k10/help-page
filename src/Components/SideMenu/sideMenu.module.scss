@@ -6,6 +6,13 @@
   width: 25%;
 }
 
+//mobile
+@media only screen and (max-width: $website-XS-width) {
+  .wrapper {
+    width: 100%;
+  }
+}
+
 /*
 .active {
   color: red !important;

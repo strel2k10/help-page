@@ -1,5 +1,18 @@
 @import "../../Styles/_settings.scss";
 
+.suggestedThemesDiv {
+  width: 1040px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.suggestedThemes {
+  font-family: Arial;
+  font-size: 20px;
+  text-align: left;
+  color: #616872;
+}
+
 .caresItemTextDanger {
   margin-bottom: 0px;
 }
@@ -11,10 +24,6 @@
 
 .caresItemTextDanger {
   color: #e74c3c;
-}
-
-.caresMainTitle {
-  font-size: 30px;
 }
 .caresTitle {
   color: #565a5c;
