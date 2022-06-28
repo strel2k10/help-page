@@ -15,7 +15,9 @@ function SideMenu() {
         boxTitle="Ajuda"
         options={[
           { url: "/help", listItem: "Ajuda" },
-          { url: "/help/aboutus", listItem: "Quem somos" },
+          { url: "/howtosection", listItem: "Como utilizar" },
+          { url: "/FAQ", listItem: "Perguntas frequentes" },
+          { url: "/aboutus", listItem: "Quem somos" },
         ]}
       />
 
@@ -27,7 +29,19 @@ function SideMenu() {
       <SideMenuComponent
         destination_url={"/howtosection"}
         boxTitle="Compra Segura"
-        options={[{ url: "/howtosection", listItem: "Envio de produtos" }]}
+        options={[
+          { url: "/howtosection", listItem: "Envio de produtos" },
+          { url: "/howtosection", listItem: "Envio de produtos" },
+          { url: "/FAQ", listItem: "Artigos Roubados" },
+          { url: "/aboutus", listItem: "Veículos" },
+          { url: "/howtosection", listItem: "Artigos de marca" },
+          { url: "/FAQ", listItem: "Envio para o exterior" },
+          { url: "/aboutus", listItem: "Transferências online" },
+          { url: "/howtosection", listItem: "Para se proteger" },
+          { url: "/FAQ", listItem: "SMSs recebidos" },
+          { url: "/aboutus", listItem: "Pagamentos por Multibanco" },
+          { url: "/aboutus", listItem: "Pagamentos por MBWay" },
+        ]}
       />
 
       <SideMenuComponent
@@ -35,20 +49,31 @@ function SideMenu() {
         boxTitle="Contacto"
         options={[
           { url: "/contact", listItem: "Problemas com anúncios" },
-          { url: "/help", listItem: "Ajuda" },
+          { url: "/help", listItem: "Problemas com os serviços" },
+          { url: "/contact", listItem: "Contactos a anúncios" },
+          { url: "/help", listItem: "Problemas técnicos" },
+          { url: "/contact", listItem: "Sugestões" },
+          { url: "/help", listItem: "Outros" },
+          { url: "/contact", listItem: "Imprensa e Publicidade" },
+          { url: "/help", listItem: "Versão mobile" },
+          { url: "/help", listItem: "Dificuldade de acesso aos telefones" },
+          { url: "/contact", listItem: "Problemas com a conta de utilizador" },
         ]}
       />
 
       <SideMenuComponent
         destination_url="/rules"
         boxTitle="Regras e Privacidade"
-        options={[{ url: "/rules", listItem: ["Regras", "Privacidade"] }]}
+        options={[
+          { url: "/rules", listItem: "Regras" },
+          { url: "/contact", listItem: "Privacidade" },
+          { url: "/contact", listItem: "Copyright" },
+        ]}
       />
 
       <SideMenuComponent
         destination_url="/testimonies"
         boxTitle="Testemunhos"
-        options={[{ url: "/testimonies", listItem: "isto devia estar vazio" }]}
       />
 
       {/* <Switch>
